@@ -1,10 +1,59 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Maths excercise</title>
-  <link href="style.css" rel="stylesheet" type="test/css" />
- </head> 
- <script src="script.js"></script>
-</html> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1><center>Maths revision</center></h1>
+    <h2><center>made by tkt0506</center></h2>
+    <h2 id="one"></h2>
+    <h2>*</h2>
+    <h2 id="two"></h2>
+    <form name="asshole">
+    <input type="number" id="answer" name="answer" min="1" max="100">
+    </form>
+   <button onclick="complete()">submit</button><br>
+   <br>
+   <br>
+   <h2>Administrator mode</h2>
+   <p id="hihi"> enter your username and password to open the Administrator mode</p>
+   <h2>Modal Login Form</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="mango">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post" name="myform">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" onclick="login()">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+   <button onclick="hack()" hidden>hack answer</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
